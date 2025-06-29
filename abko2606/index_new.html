@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelecek Rotası - ABKÖ Meslek Keşif Platformu</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNGRkQ3MDAiLz4KPHN2ZyB4PSI2IiB5PSI2IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0xMCAyTDEwLjkgOC4yNkwxNiA5TDEyLjUgMTQuMjZMMTMuNSAyMEwxMCAxN0w2LjUgMjBMNy41IDE0LjI2TDQgOUw5LjUgOC4yNkwxMCAyWiIgZmlsbD0iIzRCMDA4MiIvPgo8L3N2Zz4KPC9zdmc+Cg==">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 360 VR Video Player Libraries -->
+    <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.158.0/examples/js/controls/OrbitControls.js"></script>
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style_new.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="showPage('home')">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiNGRkQ3MDAiLz4KPHN2ZyB4PSI4IiB5PSI4IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0xMiAyTDEzLjA5IDguMjZMMjAgOUwxNC43NCAxNC4yNkwxNiAyMkwxMiAxOEw4IDIyTDkuMjYgMTQuMjZMNCA5TDEwLjkxIDguMjZMMTIgMloiIGZpbGw9IiM0QjAwODIiLz4KPC9zdmc+Cjwvc3ZnPgo=" alt="Gelecek Rotası" class="me-2">
+                <span class="brand-text">Gelecek Rotası</span>
+            </a>
+            
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#" onclick="showPage('home')">Anasayfa</a>
+                <a class="nav-link" href="#" onclick="showPage('about')">Hakkında</a>
+                <div class="nav-icons">
+                    <i class="fas fa-th nav-icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+        
+        <!-- Home Page -->
+        <section id="home-page" class="page-section active">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1 class="hero-title">GELECEK ROTASINA HOŞGELDİN</h1>
+                            <p class="hero-subtitle">
+                                Kendi yeteneklerine ve ilgi alanlarına en uygun meslekleri keşfetmeye hazır mısın?
+                            </p>
+                            <button class="btn btn-primary btn-hero" onclick="showPage('action-select')">
+                                <i class="fas fa-play me-2"></i>Hadi Başlayalım!
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-illustration">
+                            <div class="space-scene">
+                                <div class="planet planet-1"></div>
+                                <div class="planet planet-2"></div>
+                                <div class="astronaut"></div>
+                                <div class="stars"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Selection Page -->
+        <section id="action-select-page" class="page-section">
+            <div class="container">
+                <div class="row justify-content-center min-vh-100 align-items-center">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="page-title">NE YAPMAK İSTERSİN?</h1>
+                        
+                        <div class="action-buttons">
+                            <div class="action-card" onclick="showPage('test')">
+                                <div class="action-icon">
+                                    <i class="fas fa-clipboard-list"></i>
+                                </div>
+                                <h3>MESLEK TESTİNİ BAŞLAT</h3>
+                            </div>
+                            
+                            <div class="action-card" onclick="showPage('careers')">
+                                <div class="action-icon">
+                                    <i class="fas fa-vr-cardboard"></i>
+                                </div>
+                                <h3>MESLEKLERİ İNCELE</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Page -->
+        <section id="test-page" class="page-section">
+            <div class="container">
+                <div class="row justify-content-center min-vh-100">
+                    <div class="col-lg-8">
+                        <div class="test-header text-center mb-4">
+                            <h1 class="page-title">TEST SAYFALARI</h1>
+                            <div class="progress-container">
+                                <div class="progress">
+                                    <div class="progress-bar" id="test-progress" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-text" id="progress-text">1 / 170</span>
+                            </div>
+                        </div>
+                        
+                        <div class="test-content">
+                            <div class="question-card">
+                                <h3 class="question-text" id="question-text">Soru yükleniyor...</h3>
+                                
+                                <div class="answer-options">
+                                    <button class="answer-btn" data-value="1">
+                                        <span class="answer-number">1</span>
+                                        <span class="answer-text">Hiç Katılmıyorum</span>
+                                    </button>
+                                    <button class="answer-btn" data-value="2">
+                                        <span class="answer-number">2</span>
+                                        <span class="answer-text">Katılmıyorum</span>
+                                    </button>
+                                    <button class="answer-btn" data-value="3">
+                                        <span class="answer-number">3</span>
+                                        <span class="answer-text">Katılıyorum</span>
+                                    </button>
+                                    <button class="answer-btn" data-value="4">
+                                        <span class="answer-number">4</span>
+                                        <span class="answer-text">Tamamen Katılıyorum</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="test-controls">
+                                <button class="btn btn-outline-light" onclick="fillRandomly()">
+                                    <i class="fas fa-random me-2"></i>Rastgele Doldur
+                                </button>
+                                <button class="btn btn-outline-light" onclick="resetTest()">
+                                    <i class="fas fa-redo me-2"></i>Testi Sıfırla
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Page -->
+        <section id="results-page" class="page-section">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12">
+                        <div class="results-header text-center mb-5">
+                            <h1 class="page-title">TEST SONUÇLARINA GÖRE SANA UYGUN MESLEKLER</h1>
+                            <button class="btn btn-primary btn-lg mt-3" onclick="showPage('vr-explore')">
+                                Bu meslekleri VR ile keşfet
+                            </button>
+                        </div>
+                        
+                        <!-- Radar Chart -->
+                        <div class="row mb-5">
+                            <div class="col-lg-6">
+                                <div class="chart-container">
+                                    <canvas id="radarChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="top-areas">
+                                    <h3>En Güçlü Alanların</h3>
+                                    <div id="top-areas-list"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Career Cards -->
+                        <div class="career-grid" id="career-results">
+                            <!-- Career cards will be populated here -->
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <button class="btn btn-outline-light me-3" onclick="showPage('test')">
+                                <i class="fas fa-redo me-2"></i>Testi Tekrar Çöz
+                            </button>
+                            <button class="btn btn-outline-light" onclick="showPage('home')">
+                                <i class="fas fa-home me-2"></i>Ana Sayfaya Dön
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VR Explore Page -->
+        <section id="vr-explore-page" class="page-section">
+            <div class="container">
+                <div class="row justify-content-center min-vh-100 align-items-center">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="page-title">VR İLE MESLEK KEŞFİ</h1>
+                        <p class="page-subtitle">Meslekleri sanal gerçeklik ile deneyimle!</p>
+                        
+                        <div class="vr-career-grid" id="vr-career-list">
+                            <!-- VR career options will be populated here -->
+                        </div>
+                        
+                        <div class="mt-4">
+                            <button class="btn btn-outline-light me-3" onclick="showPage('results')">
+                                <i class="fas fa-arrow-left me-2"></i>Sonuçlara Dön
+                            </button>
+                            <button class="btn btn-outline-light" onclick="showPage('home')">
+                                <i class="fas fa-home me-2"></i>Ana Sayfaya Dön
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VR Simulation Pages (Dynamic) -->
+        <section id="vr-simulation-page" class="page-section">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12">
+                        <div class="simulation-header text-center mb-4">
+                            <h1 class="simulation-title" id="simulation-title">MESLEK SİMÜLASYONU</h1>
+                        </div>
+                        
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <!-- 360 VR Video Player Container -->
+                                <div class="vr-video-container" id="vr-video-container">
+                                    <div class="vr-loading">
+                                        <div class="spinner"></div>
+                                        <p>360° VR Deneyimi Yükleniyor...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <button class="btn btn-warning me-3" onclick="showPage('vr-explore')">
+                                <i class="fas fa-arrow-left me-2"></i>VR Ana Sayfaya Dön
+                            </button>
+                            <button class="btn btn-warning" onclick="showPage('careers')">
+                                <i class="fas fa-briefcase me-2"></i>Diğer Meslekleri Gör
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Page -->
+        <section id="careers-page" class="page-section">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12">
+                        <div class="text-center mb-5">
+                            <h1 class="page-title">MESLEKLER</h1>
+                            <p class="page-subtitle">Tüm meslekleri keşfet ve VR ile deneyimle</p>
+                        </div>
+                        
+                        <div class="career-grid" id="all-careers">
+                            <!-- All career cards will be populated here -->
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <button class="btn btn-outline-light" onclick="showPage('home')">
+                                <i class="fas fa-home me-2"></i>Ana Sayfaya Dön
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about-page" class="page-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <h1 class="page-title">HAKKINDA</h1>
+                            <p class="about-text">
+                                Gelecek Rotası, öğrencilerin ilgi, yetenek ve değerlerine uygun meslekleri keşfetmelerine yardımcı olmak için tasarlanmış bir dijital rehberlik platformudur. Kullanıcılar, kişisel özelliklerini belirlemek amacıyla bilimsel testler çözer ve bu testler sonucunda kendilerine uygun meslek önerileri alırlar. Ayrıca önerilen mesleklerin sanal gerçeklik (VR) ortamında hazırlanan deneyimlerle simülasyonlarıyla mesleklerin işleyişini yakından görebilirler.
+                            </p>
+                            <p class="about-text">
+                                Bu sayede öğrenciler, meslekleri gerçekçi bir ortamda tanıma fırsatı elde ederek bilgi sahibi olurlar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-illustration">
+                            <div class="vr-character">
+                                <div class="vr-headset"></div>
+                                <div class="character-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Career Data (embedded to avoid CORS issues)
+        const careerData = [
+            // FEN ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Doktor",
+                description: "İnsan sağlığını koruma, hastalıkları teşhis ve tedavi etme görevi olan, tıp eğitimi almış profesyonel.",
+                requirements: {
+                    "Sayısal Yetenek": 2.5,
+                    "Göz-El Koordinasyonu": 2.5,
+                    "Fen Bilimleri İlgisi": 3.5,
+                    "Sosyal Yardım İlgisi": 3.5
+                },
+                vr_image: ""
+            },
+            
+            // SOSYAL ALAN - ABKÖ Orijinal Önerisi
+            {
+                name: "Öğretmen", 
+                description: "Öğrencilere bilgi ve beceri kazandıran, eğitim süreçlerini yöneten, pedagojik formasyona sahip kişi.",
+                requirements: {
+                    "Sözel Yetenek": 3.5,
+                    "Sosyal Bilimler İlgisi": 3.5,
+                    "Sosyal Yardım İlgisi": 2.5,
+                    "İkna İlgisi": 2.5
+                },
+                vr_image: "images/teacher_simulation.png",
+                hasVRVideo: true,
+                vrVideoFile: "https://www.youtube.com/watch?v=_y-lSw1SNaU",
+                vrDescription: "Öğretmenlik mesleğini YouTube VR video ile deneyimleyin! Sınıf ortamında öğretmenin günlük yaşamını keşfedin."
+            },
+            
+            // MATEMATİK ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Matematik Öğretmeni",
+                description: "Matematik dersleri veren, matematiksel düşünme becerilerini geliştiren eğitimci.",
+                requirements: {
+                    "Sayısal Yetenek": 3.5,
+                    "Şekil-Uzay Yeteneği": 3.5,
+                    "Mekanik İlgi": 2.5,
+                    "Fen Bilimleri İlgisi": 2.5
+                },
+                vr_image: "images/math_teacher_simulation.png"
+            },
+            
+            // YABANCI DİL ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Yabancı Dil Öğretmeni",
+                description: "Yabancı dil dersleri veren, dil becerilerini geliştiren, çeviri ve tercümanlık yapan uzman.",
+                requirements: {
+                    "Sözel Yetenek": 3.5,
+                    "Yabancı Dil İlgisi": 3.5,
+                    "Edebiyat İlgisi": 2.5
+                },
+                vr_image: "images/language_teacher_simulation.png"
+            },
+            
+            // GÜZEL SANATLAR ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Ressam",
+                description: "Görsel sanatlar alanında eserler üreten, resim teknikleri ve estetik bilgisine sahip sanatçı.",
+                requirements: {
+                    "Göz-El Koordinasyonu": 3.5,
+                    "Şekil-Uzay Yeteneği": 2.5,
+                    "Güzel Sanatlar İlgisi": 3.5
+                },
+                vr_image: "images/painter_simulation.png"
+            },
+            
+            // TİCARET ALANI - ABKÖ Orijinal Önerisi  
+            {
+                name: "Ticaret Uzmanı",
+                description: "Ticari faaliyetleri yürüten, alım-satım işlemleri yapan, pazarlama stratejileri geliştiren uzman.",
+                requirements: {
+                    "Sayısal Yetenek": 2.5,
+                    "İş Ayrıntıları İlgisi": 3.5,
+                    "Ticaret İlgisi": 3.5,
+                    "İkna İlgisi": 2.5
+                },
+                vr_image: "images/business_simulation.png"
+            },
+            
+            // SAĞLIK ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Hemşire",
+                description: "Hasta bakımı ve sağlık hizmetleri sunan, tıbbi prosedürleri uygulayan sağlık profesyoneli.",
+                requirements: {
+                    "Sayısal Yetenek": 2.5,
+                    "Göz-El Koordinasyonu": 2.5,
+                    "Fen Bilimleri İlgisi": 3.5,
+                    "Sosyal Yardım İlgisi": 3.5
+                },
+                vr_image: "images/nurse_simulation.png"
+            },
+            
+            // ÇOCUK GELİŞİMİ ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Çocuk Gelişim Uzmanı",
+                description: "Çocukların gelişim süreçlerini takip eden, eğitim programları hazırlayan uzman.",
+                requirements: {
+                    "Sözel Yetenek": 2.5,
+                    "Sosyal Yardım İlgisi": 3.5,
+                    "İkna İlgisi": 2.5
+                },
+                vr_image: "images/child_development_simulation.png"
+            },
+            
+            // GİYİM ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Moda Tasarımcısı",
+                description: "Giyim eşyaları tasarlayan, moda trendlerini takip eden, yaratıcı tasarım çözümleri üreten uzman.",
+                requirements: {
+                    "Şekil-Uzay Yeteneği": 3.5,
+                    "Göz-El Koordinasyonu": 2.5,
+                    "Güzel Sanatlar İlgisi": 2.5
+                },
+                vr_image: "images/fashion_designer_simulation.png"
+            },
+            
+            // ÇİÇEK-ÖRGÜ-DOKUMA ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "El Sanatları Uzmanı",
+                description: "Geleneksel el sanatlarını icra eden, çiçek arrangement, örgü ve dokuma işleri yapan sanatçı.",
+                requirements: {
+                    "Göz-El Koordinasyonu": 2.5,
+                    "Güzel Sanatlar İlgisi": 3.5
+                },
+                vr_image: "images/handicrafts_simulation.png"
+            },
+            
+            // ELEKTRONİK-ELEKTRİK ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Elektrik Mühendisi",
+                description: "Elektriksel sistemleri tasarlayan, elektrik ve elektronik cihazları geliştiren mühendis.",
+                requirements: {
+                    "Sayısal Yetenek": 3.5,
+                    "Göz-El Koordinasyonu": 3.5,
+                    "Fen Bilimleri İlgisi": 3.5
+                },
+                vr_image: "images/electrical_engineer_simulation.png"
+            },
+            
+            // AĞAÇ İŞLERİ-YAPI-KALIPÇILIK ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "İnşaat Mühendisi",
+                description: "Yapıların tasarım, planlama, inşaat ve denetim süreçlerini yürüten mühendis.",
+                requirements: {
+                    "Sayısal Yetenek": 3.5,
+                    "Göz-El Koordinasyonu": 3.5,
+                    "Şekil-Uzay Yeteneği": 3.5,
+                    "Mekanik İlgi": 3.5,
+                    "Fen Bilimleri İlgisi": 2.5
+                },
+                vr_image: "images/civil_engineer_simulation.png"
+            },
+            
+            // TURİZM ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Turizm Rehberi",
+                description: "Turistlere rehberlik eden, kültürel ve tarihi bilgileri aktaran, turizm hizmetleri sunan uzman.",
+                requirements: {
+                    "Sözel Yetenek": 3.5,
+                    "Sayısal Yetenek": 2.5,
+                    "İkna İlgisi": 2.5,
+                    "İş Ayrıntıları İlgisi": 2.5
+                },
+                vr_image: "images/tourism_guide_simulation.png"
+            },
+            
+            // TARIM ALANI - ABKÖ Orijinal Önerisi
+            {
+                name: "Ziraat Mühendisi",
+                description: "Tarımsal üretim süreçlerini planlayan, bitki ve hayvan yetiştiriciliği konusunda uzmanlaşmış mühendis.",
+                requirements: {
+                    "Sayısal Yetenek": 2.5,
+                    "Göz-El Koordinasyonu": 2.5,
+                    "Ziraat İlgisi": 3.5,
+                    "Fen Bilimleri İlgisi": 2.5
+                },
+                vr_image: "images/agricultural_engineer_simulation.png"
+            },
+            
+            // MÜZİK ALANI - Ek Öneri
+            {
+                name: "Müzik Öğretmeni",
+                description: "Müzik dersleri veren, müzik teorisi ve enstrüman çalmayı öğreten eğitimci.",
+                requirements: {
+                    "Göz-El Koordinasyonu": 2.5,
+                    "Müzik İlgisi": 3.5,
+                    "Sosyal Yardım İlgisi": 2.5
+                },
+                vr_image: "images/music_teacher_simulation.png"
+            }
+        ];
+        
+        // Global variables
+        let questions = [];
+        let answers = {};
+        let currentQuestionIndex = 0;
+        let careers = [];
+        let currentSimulation = null;
+        let testResults = null;
+        
+        // VR Video Player variables
+        let vrScene, vrCamera, vrRenderer, vrControls;
+        let videoTexture, videoMaterial, sphereGeometry, sphereMesh;
+        let isPlaying = false;
+        let videoElement = null;
+
+        // ABKÖ Orijinal Yapısı - 4 Yetenek + 12 İlgi Alanı (Toplam 170 madde)
+        const academicCategories = [
+            // 4 YETENEK ALANI (44 madde)
+            { name: "Sözel Yetenek", type: "yetenek", madde_sayisi: 12, questions: [] },
+            { name: "Sayısal Yetenek", type: "yetenek", madde_sayisi: 10, questions: [] },
+            { name: "Şekil-Uzay Yeteneği", type: "yetenek", madde_sayisi: 12, questions: [] },
+            { name: "Göz-El Koordinasyonu", type: "yetenek", madde_sayisi: 10, questions: [] },
+            
+            // 12 İLGİ ALANI (126 madde)
+            { name: "Fen Bilimleri İlgisi", type: "ilgi", madde_sayisi: 12, questions: [] },
+            { name: "Sosyal Bilimler İlgisi", type: "ilgi", madde_sayisi: 11, questions: [] },
+            { name: "İkna İlgisi", type: "ilgi", madde_sayisi: 11, questions: [] },
+            { name: "Yabancı Dil İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "Ticaret İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "Ziraat İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "Mekanik İlgi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "İş Ayrıntıları İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "Edebiyat İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "Güzel Sanatlar İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "Müzik İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] },
+            { name: "Sosyal Yardım İlgisi", type: "ilgi", madde_sayisi: 10, questions: [] }
+        ];
+
+        // Page navigation with smooth transitions
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-section').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show target page with animation
+            setTimeout(() => {
+                const targetPage = document.getElementById(pageId + '-page');
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                    
+                    // Initialize page-specific content
+                    if (pageId === 'test') {
+                        initializeTest();
+                    } else if (pageId === 'careers') {
+                        loadAllCareers();
+                    } else if (pageId === 'vr-explore') {
+                        loadVRCareers();
+                    } else if (pageId === 'results') {
+                        // Check if we have test results to display
+                        if (window.testResults && window.testResults.categoryScores) {
+                            displayExistingResults();
+                        }
+                    }
+                }
+            }, 100);
+        }
+
+        // Make functions globally accessible for HTML onclick attributes
+        window.showPage = showPage;
+        window.fillRandomly = fillRandomly;
+        window.resetTest = resetTest;
+        window.showCareerDetail = showCareerDetail;
+        window.openVRSimulation = openVRSimulation;
+
+        // Initialize application
+        document.addEventListener('DOMContentLoaded', function() {
+            // Suppress WebSocket errors from Live Preview
+            window.addEventListener('error', function(e) {
+                if (e.message.includes('WebSocket') || e.message.includes('favicon')) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+            
+            // Check if external libraries loaded
+            checkLibraryAvailability();
+            
+            loadQuestions();
+            loadCareers();
+            loadAnswersFromStorage();
+            
+            // Add scroll animations
+            addScrollAnimations();
+        });
+
+        // Check if external libraries are available
+        function checkLibraryAvailability() {
+            const libraries = {
+                'Three.js': typeof THREE !== 'undefined',
+                'Chart.js': typeof Chart !== 'undefined',
+                'YouTube API': typeof YT !== 'undefined'
+            };
+            
+            console.log('Library availability:', libraries);
+            
+            // Show warning if libraries are missing
+            const missingLibraries = Object.entries(libraries)
+                .filter(([, available]) => !available)
+                .map(([name]) => name);
+            
+            if (missingLibraries.length > 0) {
+                console.warn('Missing libraries:', missingLibraries);
+                // Add a subtle warning to the page
+                const warning = document.createElement('div');
+                warning.style.cssText = `
+                    position: fixed;
+                    top: 80px;
+                    right: 20px;
+                    background: rgba(255, 193, 7, 0.9);
+                    color: #000;
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                    font-size: 0.8rem;
+                    z-index: 1000;
+                    max-width: 300px;
+                `;
+                warning.innerHTML = `
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <strong>Bazı özellikler yüklenemedi:</strong><br>
+                    ${missingLibraries.join(', ')}<br>
+                    <small>İnternet bağlantınızı kontrol edin</small>
+                `;
+                document.body.appendChild(warning);
+                
+                // Remove warning after 5 seconds
+                setTimeout(() => {
+                    if (warning.parentNode) {
+                        warning.parentNode.removeChild(warning);
+                    }
+                }, 5000);
+            }
+        }
+
+        // Load questions from JSON
+        async function loadQuestions() {
+            try {
+                const response = await fetch('abko_questions.json');
+                questions = await response.json();
+                console.log(`${questions.length} soru yüklendi`);
+            } catch (error) {
+                console.error('Sorular yüklenirken hata:', error);
+                // Fallback: Create sample questions if file not found
+                createSampleQuestions();
+            }
+        }
+
+        // Create sample questions if JSON file is not available
+        function createSampleQuestions() {
+            const categories = academicCategories.map(cat => cat.name);
+            const sampleTexts = [
+                "Bu alandaki konularla ilgilenmeyi seviyorum",
+                "Bu alandaki problemleri çözmekte iyiyim",
+                "Bu alanla ilgili kitaplar okumaktan hoşlanırım",
+                "Bu alandaki derslerde başarılıyım",
+                "Bu alanla ilgili projeler yapmayı seviyorum"
+            ];
+            
+            questions = [];
+            let id = 1;
+            
+            categories.forEach(category => {
+                const questionsPerCategory = Math.floor(170 / categories.length);
+                for (let i = 0; i < questionsPerCategory; i++) {
+                    questions.push({
+                        id: id++,
+                        question: `${category}: ${sampleTexts[i % sampleTexts.length]}`,
+                        category: category
+                    });
+                }
+            });
+            
+            // Add remaining questions to reach 170
+            while (questions.length < 170) {
+                questions.push({
+                    id: id++,
+                    question: "Genel: Yeni şeyler öğrenmeyi seviyorum",
+                    category: "Genel"
+                });
+            }
+        }
+
+        // Load careers data
+        function loadCareers() {
+            // Use imported career data
+            careers = careerData.map((career, index) => ({
+                id: index + 1,
+                name: career.name,
+                summary: career.description,
+                description: career.description,
+                icon: 'fas fa-briefcase', // Default icon
+                color: 'primary', // Default color
+                requirements: career.requirements,
+                vrDescription: career.vrDescription || `${career.name} mesleğini VR ile deneyimleyin!`,
+                illustration: career.vr_image,
+                hasVRVideo: career.hasVRVideo || false,
+                vrVideoFile: career.vrVideoFile || null
+            }));
+        }
+
+        // Initialize test
+        function initializeTest() {
+            currentQuestionIndex = 0;
+            if (questions.length > 0) {
+                displayQuestion();
+                updateProgress();
+            }
+            
+            // Remove existing event listeners first to prevent duplicates
+            document.querySelectorAll('.answer-btn').forEach(btn => {
+                btn.replaceWith(btn.cloneNode(true));
+            });
+            
+            // Add answer button event listeners (only once)
+            document.querySelectorAll('.answer-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (this.classList.contains('processing')) return; // Prevent double clicks
+                    this.classList.add('processing');
+                    
+                    setTimeout(() => {
+                        this.classList.remove('processing');
+                    }, 600);
+                    
+                    selectAnswer(parseInt(this.dataset.value));
+                });
+            });
+        }
+
+        // Display current question
+        function displayQuestion() {
+            if (currentQuestionIndex >= questions.length) {
+                finishTest();
+                return;
+            }
+            
+            const question = questions[currentQuestionIndex];
+            document.getElementById('question-text').textContent = question.question;
+            
+            // Clear previous selections
+            document.querySelectorAll('.answer-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            
+            // Show previous answer if exists
+            if (answers[question.id]) {
+                const selectedBtn = document.querySelector(`[data-value="${answers[question.id].value}"]`);
+                if (selectedBtn) {
+                    selectedBtn.classList.add('selected');
+                }
+            }
+        }
+
+        // Select answer
+        function selectAnswer(value) {
+            // Prevent multiple calls
+            if (selectAnswer.isProcessing) return;
+            selectAnswer.isProcessing = true;
+            
+            const question = questions[currentQuestionIndex];
+            
+            // Validate question exists
+            if (!question || currentQuestionIndex >= questions.length) {
+                selectAnswer.isProcessing = false;
+                return;
+            }
+            
+            // Save answer
+            answers[question.id] = {
+                value: value,
+                category: question.category
+            };
+            
+            // Update UI
+            document.querySelectorAll('.answer-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            const selectedBtn = document.querySelector(`[data-value="${value}"]`);
+            if (selectedBtn) {
+                selectedBtn.classList.add('selected');
+            }
+            
+            // Save to localStorage
+            localStorage.setItem('abko_answers', JSON.stringify(answers));
+            
+            // Move to next question after a short delay
+            setTimeout(() => {
+                currentQuestionIndex++;
+                displayQuestion();
+                updateProgress();
+                selectAnswer.isProcessing = false;
+            }, 500);
+        }
+
+        // Update progress bar
+        function updateProgress() {
+            const progress = ((currentQuestionIndex) / questions.length) * 100;
+            document.getElementById('test-progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = `${currentQuestionIndex} / ${questions.length}`;
+        }
+
+        // Finish test and show results
+        function finishTest() {
+            calculateResults();
+        }
+
+        // Calculate test results
+        function calculateResults() {
+            const categoryScores = {};
+            academicCategories.forEach(cat => {
+                categoryScores[cat.name] = { total: 0, count: 0 };
+            });
+
+            questions.forEach(q => {
+                const answer = answers[q.id];
+                if (answer !== undefined) {
+                    categoryScores[q.category].total += answer.value;
+                    categoryScores[q.category].count++;
+                }
+            });
+
+            const finalScores = {};
+            for (const categoryName in categoryScores) {
+                if (categoryScores[categoryName].count > 0) {
+                    finalScores[categoryName] = categoryScores[categoryName].total / categoryScores[categoryName].count;
+                } else {
+                    finalScores[categoryName] = 0;
+                }
+            }
+
+            // Calculate career matches
+            const careerMatches = careerData.map(career => {
+                let totalMatch = 0;
+                let totalRequirements = 0;
+                let matchedRequirements = 0;
+
+                for (const reqCategory in career.requirements) {
+                    const requiredScore = career.requirements[reqCategory];
+                    const userScore = finalScores[reqCategory] || 0;
+
+                    totalRequirements += requiredScore;
+
+                    // Calculate weighted match for each category
+                    const match = Math.min(userScore, requiredScore) / requiredScore;
+                    totalMatch += match * requiredScore; // Weight by required score
+
+                    if (userScore >= requiredScore) {
+                        matchedRequirements++;
+                    }
+                }
+
+                const matchPercentage = totalRequirements > 0 ? (totalMatch / totalRequirements) * 100 : 0;
+
+                return {
+                    ...career,
+                    matchPercentage: matchPercentage,
+                    matchedRequirementsCount: matchedRequirements,
+                    totalRequirementsCount: Object.keys(career.requirements).length
+                };
+            });
+
+            // Sort careers by match percentage in descending order
+            careerMatches.sort((a, b) => b.matchPercentage - a.matchPercentage);
+
+            displayResults(finalScores, careerMatches);
+        }
+
+        // Get top 3 areas
+        function getTopAreas(scores) {
+            if (!scores || typeof scores !== 'object') {
+                return [];
+            }
+            return Object.entries(scores)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 3)
+                .map(([category, score]) => ({
+                    category,
+                    score: score.toFixed(1)
+                }));
+        }
+
+        // Get recommended careers
+        function getRecommendedCareers(userScores) {
+            const recommendations = [];
+            
+            careers.forEach(career => {
+                let totalMatch = 0;
+                let requirementCount = 0;
+                
+                Object.entries(career.requirements).forEach(([category, requiredScore]) => {
+                    const userScore = userScores[category] || 0;
+                    const match = Math.min(userScore / requiredScore, 1);
+                    totalMatch += match;
+                    requirementCount++;
+                });
+                
+                const matchPercentage = Math.round((totalMatch / requirementCount) * 100);
+                
+                if (matchPercentage >= 60) {
+                    recommendations.push({
+                        ...career,
+                        matchPercentage
+                    });
+                }
+            });
+            
+            return recommendations.sort((a, b) => b.matchPercentage - a.matchPercentage);
+        }
+
+        // Display results  
+        function displayResults(finalScores, careerMatches) {
+            // Use existing page navigation system
+            showPage('results');
+            
+            // Store results globally for other functions to use
+            testResults = {
+                categoryScores: finalScores,
+                topAreas: getTopAreas(finalScores),
+                recommendedCareers: careerMatches.filter(career => career.matchPercentage >= 60)
+            };
+            
+            // Update existing radar chart if it exists
+            setTimeout(() => {
+                const ctx = document.getElementById('radarChart');
+                if (ctx && typeof Chart !== 'undefined') {
+                    displayRadarChart(finalScores);
+                }
+                
+                // Update top areas if container exists
+                const topAreasContainer = document.getElementById('top-areas-list');
+                if (topAreasContainer) {
+                    displayTopAreas(finalScores);
+                }
+                
+                // Update career results if container exists  
+                const careerContainer = document.getElementById('career-results');
+                if (careerContainer) {
+                    displayCareerRecommendations(careerMatches);
+                }
+            }, 100);
+        }
+        
+        // Display existing results when navigating to results page
+        function displayExistingResults() {
+            if (!window.testResults || !window.testResults.categoryScores) {
+                return;
+            }
+            
+            const finalScores = window.testResults.categoryScores;
+            const recommendedCareers = window.testResults.recommendedCareers || [];
+            
+            // Update existing radar chart if it exists
+            setTimeout(() => {
+                const ctx = document.getElementById('radarChart');
+                if (ctx && typeof Chart !== 'undefined') {
+                    displayRadarChart(finalScores);
+                }
+                
+                // Update top areas if container exists
+                const topAreasContainer = document.getElementById('top-areas-list');
+                if (topAreasContainer) {
+                    displayTopAreas(finalScores);
+                }
+                
+                // Update career results if container exists  
+                const careerContainer = document.getElementById('career-results');
+                if (careerContainer) {
+                    displayCareerRecommendations(recommendedCareers);
+                }
+            }, 100);
+        }
+        
+        // Display radar chart with new data
+        function displayRadarChart(finalScores) {
+            const ctx = document.getElementById('radarChart');
+            if (!ctx) return;
+            
+            if (!finalScores || typeof finalScores !== 'object') {
+                return;
+            }
+            
+            const chartContext = ctx.getContext('2d');
+            
+            // Destroy existing chart if it exists
+            if (window.radarChart instanceof Chart) {
+                window.radarChart.destroy();
+            }
+
+            const labels = Object.keys(finalScores);
+            const data = Object.values(finalScores);
+
+            window.radarChart = new Chart(chartContext, {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Puanlarınız',
+                        data: data,
+                        backgroundColor: 'rgba(255, 215, 0, 0.2)',
+                        borderColor: '#FFD700',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#FFD700',
+                        pointBorderColor: '#FFA500',
+                        pointRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#FFFFFF'
+                            }
+                        }
+                    },
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 4,
+                            ticks: {
+                                color: '#FFFFFF',
+                                stepSize: 1
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.2)'
+                            },
+                            pointLabels: {
+                                color: '#FFFFFF',
+                                font: {
+                                    size: 10
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Display top areas with new data
+        function displayTopAreas(finalScores) {
+            const container = document.getElementById('top-areas-list');
+            if (!container) return;
+            
+            if (!finalScores || typeof finalScores !== 'object') {
+                container.innerHTML = '<p>No results available</p>';
+                return;
+            }
+            
+            container.innerHTML = '';
+            
+            const sortedScores = Object.entries(finalScores)
+                .sort(([, scoreA], [, scoreB]) => scoreB - scoreA)
+                .slice(0, 3);
+            
+            sortedScores.forEach(([category, score]) => {
+                const areaElement = document.createElement('div');
+                areaElement.className = 'area-item';
+                areaElement.innerHTML = `
+                    <div>
+                        <i class="fas fa-star me-2"></i>
+                        ${category}
+                    </div>
+                    <span class="area-score">${score.toFixed(2)}/4.0</span>
+                `;
+                container.appendChild(areaElement);
+            });
+        }
+        
+        // Display career recommendations with new data
+        function displayCareerRecommendations(careerMatches) {
+            const container = document.getElementById('career-results');
+            if (!container) return;
+            
+            if (!careerMatches || !Array.isArray(careerMatches)) {
+                container.innerHTML = '<p>No career recommendations available</p>';
+                return;
+            }
+            
+            container.innerHTML = '';
+            
+            const recommendedCareers = careerMatches.filter(career => career.matchPercentage >= 60);
+            
+            if (recommendedCareers.length > 0) {
+                recommendedCareers.forEach((career, index) => {
+                    const careerCard = document.createElement('div');
+                    careerCard.className = 'career-card';
+                    careerCard.innerHTML = `
+                        <div class="career-header">
+                            <i class="fas fa-briefcase career-icon"></i>
+                            <span class="career-match">${Math.round(career.matchPercentage)}% Uyum</span>
+                        </div>
+                        <h4 class="career-title">${career.name}</h4>
+                        <p class="career-description">${career.description}</p>
+                        <div class="career-actions">
+                            <button class="btn-career btn-career-primary" onclick="showCareerDetail(${index + 1})">
+                                <i class="fas fa-info-circle me-1"></i>Detayları Gör
+                            </button>
+                            <button class="btn-career btn-career-secondary" onclick="openVRSimulation(${index + 1})">
+                                <i class="fas fa-vr-cardboard me-1"></i>VR
+                            </button>
+                        </div>
+                    `;
+                    container.appendChild(careerCard);
+                });
+            } else {
+                container.innerHTML = `
+                    <div class="col-12 text-center">
+                        <div class="alert alert-info">
+                            <h5>Henüz uygun meslek bulunamadı</h5>
+                            <p>Puanlarınıza %60 ve üzeri uyum gösteren meslek bulunamadı. Testi tekrar çözmeyi deneyebilirsiniz.</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Load all careers for careers page
+        function loadAllCareers() {
+            const container = document.getElementById('all-careers');
+            container.innerHTML = '';
+            
+            careers.forEach(career => {
+                const careerCard = document.createElement('div');
+                careerCard.className = 'career-card';
+                careerCard.innerHTML = `
+                    <div class="career-header">
+                        <i class="${career.icon} career-icon"></i>
+                    </div>
+                    <h4 class="career-title">${career.name}</h4>
+                    <p class="career-description">${career.summary}</p>
+                    <div class="career-actions">
+                        <button class="btn-career btn-career-primary" onclick="showCareerDetail(${career.id})">
+                            <i class="fas fa-info-circle me-1"></i>Detayları Gör
+                        </button>
+                        <button class="btn-career btn-career-secondary" onclick="openVRSimulation(${career.id})">
+                            <i class="fas fa-vr-cardboard me-1"></i>VR Deneyimi
+                        </button>
+                    </div>
+                `;
+                container.appendChild(careerCard);
+            });
+        }
+
+        // Load VR careers for VR explore page
+        function loadVRCareers() {
+            const container = document.getElementById('vr-career-list');
+            container.innerHTML = '';
+            
+            const availableCareers = testResults ? testResults.recommendedCareers : careers.slice(0, 4);
+            
+            availableCareers.forEach(career => {
+                const vrCard = document.createElement('div');
+                vrCard.className = 'vr-career-card';
+                vrCard.onclick = () => openVRSimulation(career.id);
+                vrCard.innerHTML = `
+                    <i class="${career.icon} vr-career-icon"></i>
+                    <h5 class="vr-career-title">${career.name}</h5>
+                    <p class="vr-career-subtitle">VR Simülasyonu</p>
+                `;
+                container.appendChild(vrCard);
+            });
+        }
+
+        // Show career detail modal
+        function showCareerDetail(careerId) {
+            const career = careers.find(c => c.id === careerId);
+            if (!career) return;
+            
+            // Create modal
+            const modal = document.createElement('div');
+            modal.className = 'modal fade';
+            modal.innerHTML = `
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content" style="background: var(--gradient-card); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2); color: var(--text-light);">
+                        <div class="modal-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+                            <h5 class="modal-title">
+                                <i class="${career.icon} me-2" style="color: var(--accent-yellow);"></i>${career.name}
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6 style="color: var(--accent-yellow);">Meslek Tanımı</h6>
+                            <p>${career.description}</p>
+                            
+                            <h6 style="color: var(--accent-yellow);">Gerekli Akademik Alanlar</h6>
+                            <div class="row g-2">
+                                ${Object.entries(career.requirements).map(([category, score]) => `
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-between align-items-center p-2" style="background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                            <span><i class="fas fa-star me-2"></i>${category}</span>
+                                            <span class="badge" style="background: var(--accent-yellow); color: var(--primary-purple);">${score}/4.0</span>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <button class="btn btn-primary btn-lg" onclick="openVRSimulation(${career.id}); bootstrap.Modal.getInstance(this.closest('.modal')).hide();">
+                                    <i class="fas fa-vr-cardboard me-2"></i>VR Simülasyonunu Başlat
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            const bsModal = new bootstrap.Modal(modal);
+            bsModal.show();
+            
+            // Remove modal from DOM when hidden
+            modal.addEventListener('hidden.bs.modal', function() {
+                document.body.removeChild(modal);
+            });
+        }
+
+        // Open VR simulation
+        function openVRSimulation(careerId) {
+            const career = careers.find(c => c.id === careerId);
+            if (!career) return;
+            
+            currentSimulation = career;
+            
+            // Update simulation page content
+            document.getElementById('simulation-title').textContent = `${career.name.toUpperCase()} MESLEĞİ SİMÜLASYONU`;
+            
+            showPage('vr-simulation');
+            
+            // Initialize VR video player if career has VR video
+            if (career.hasVRVideo && career.vrVideoFile) {
+                setTimeout(() => {
+                    initVRVideoPlayer(career.vrVideoFile);
+                }, 500);
+            }
+        }
+
+        // Get career illustration
+        function getCareerIllustration(illustrationType) {
+            const illustrations = {
+                'doctor-office': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-user-md"></i>
+                        <i class="fas fa-stethoscope ms-3"></i>
+                        <i class="fas fa-heartbeat ms-3"></i>
+                    </div>
+                `,
+                'classroom': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <i class="fas fa-book ms-3"></i>
+                        <i class="fas fa-graduation-cap ms-3"></i>
+                    </div>
+                `,
+                'courtroom': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-balance-scale"></i>
+                        <i class="fas fa-gavel ms-3"></i>
+                        <i class="fas fa-landmark ms-3"></i>
+                    </div>
+                `,
+                'construction-site': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-hard-hat"></i>
+                        <i class="fas fa-tools ms-3"></i>
+                        <i class="fas fa-building ms-3"></i>
+                    </div>
+                `,
+                'software-office': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-laptop-code"></i>
+                        <i class="fas fa-mobile-alt ms-3"></i>
+                        <i class="fas fa-code ms-3"></i>
+                    </div>
+                `,
+                'art-studio': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-palette"></i>
+                        <i class="fas fa-paint-brush ms-3"></i>
+                        <i class="fas fa-image ms-3"></i>
+                    </div>
+                `,
+                'nurse-station': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-user-nurse"></i>
+                        <i class="fas fa-hospital ms-3"></i>
+                        <i class="fas fa-pills ms-3"></i>
+                    </div>
+                `,
+                'music-studio': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-music"></i>
+                        <i class="fas fa-guitar ms-3"></i>
+                        <i class="fas fa-microphone ms-3"></i>
+                    </div>
+                `,
+                'fashion-studio': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-tshirt"></i>
+                        <i class="fas fa-cut ms-3"></i>
+                        <i class="fas fa-magic ms-3"></i>
+                    </div>
+                `,
+                'business-office': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-chart-line ms-3"></i>
+                        <i class="fas fa-handshake ms-3"></i>
+                    </div>
+                `,
+                'agricultural-field': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-seedling"></i>
+                        <i class="fas fa-tractor ms-3"></i>
+                        <i class="fas fa-leaf ms-3"></i>
+                    </div>
+                `,
+                'tourism-guide': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <i class="fas fa-camera ms-3"></i>
+                        <i class="fas fa-globe-americas ms-3"></i>
+                    </div>
+                `,
+                'electrical-lab': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-microchip ms-3"></i>
+                        <i class="fas fa-plug ms-3"></i>
+                    </div>
+                `,
+                'child-development': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-baby"></i>
+                        <i class="fas fa-child ms-3"></i>
+                        <i class="fas fa-puzzle-piece ms-3"></i>
+                    </div>
+                `,
+                'handicrafts-workshop': `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; color: var(--accent-yellow);">
+                        <i class="fas fa-hands"></i>
+                        <i class="fas fa-scissors ms-3"></i>
+                        <i class="fas fa-gem ms-3"></i>
+                    </div>
+                `
+            };
+            
+            return illustrations[illustrationType] || illustrations['doctor-office'];
+        }
+
+        // Load answers from localStorage
+        function loadAnswersFromStorage() {
+            const saved = localStorage.getItem('abko_answers');
+            if (saved) {
+                answers = JSON.parse(saved);
+            }
+        }
+
+        // Fill randomly for testing
+        function fillRandomly() {
+            for (let i = 0; i < questions.length; i++) {
+                const question = questions[i];
+                answers[question.id] = {
+                    value: Math.floor(Math.random() * 4) + 1,
+                    category: question.category
+                };
+            }
+            localStorage.setItem('abko_answers', JSON.stringify(answers));
+            finishTest();
+        }
+
+        // Reset test
+        function resetTest() {
+            answers = {};
+            currentQuestionIndex = 0;
+            testResults = null;
+            localStorage.removeItem('abko_answers');
+            
+            if (document.getElementById('test-page').classList.contains('active')) {
+                initializeTest();
+            }
+        }
+
+        // Add scroll animations
+        function addScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements that should animate
+            document.querySelectorAll('.career-card, .action-card, .area-item').forEach(el => {
+                el.classList.add('fade-in');
+                observer.observe(el);
+            });
+        }
+
+        // Add video placeholder click handler
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.video-placeholder')) {
+                // Show VR experience modal
+                const modal = document.createElement('div');
+                modal.className = 'modal fade';
+                modal.innerHTML = `
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="background: var(--gradient-card); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2); color: var(--text-light);">
+                            <div class="modal-header" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">
+                                <h5 class="modal-title">
+                                    <i class="fas fa-vr-cardboard me-2" style="color: var(--accent-yellow);"></i>VR Deneyimi
+                                </h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center p-5">
+                                <div class="mb-4">
+                                    <i class="fas fa-vr-cardboard" style="font-size: 5rem; color: var(--accent-yellow);"></i>
+                                </div>
+                                <h4 class="mb-3">${currentSimulation ? currentSimulation.name : 'Meslek'} VR Deneyimi</h4>
+                                <p class="lead mb-4">Bu mesleği sanal gerçeklik ile deneyimlemeye hazırlanıyorsunuz!</p>
+                                <div class="alert alert-warning" style="background: rgba(255, 193, 7, 0.2); border: 1px solid rgba(255, 193, 7, 0.5); color: var(--text-light);">
+                                    <i class="fas fa-exclamation-triangle me-2"></i>
+                                    <strong>Yakında:</strong> VR içeriği şu anda hazırlanmaktadır. Bu özellik gelecek güncellemede aktif olacaktır.
+                                </div>
+                                <div class="mt-4">
+                                    <p style="color: rgba(255, 255, 255, 0.7);">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        VR deneyimi için VR gözlük veya uyumlu cihaz gereklidir.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-footer" style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Kapat</button>
+                                <button type="button" class="btn btn-primary" disabled>
+                                    <i class="fas fa-play me-2"></i>VR'ı Başlat (Yakında)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                document.body.appendChild(modal);
+                const bsModal = new bootstrap.Modal(modal);
+                bsModal.show();
+                
+                modal.addEventListener('hidden.bs.modal', function() {
+                    document.body.removeChild(modal);
+                });
+            }
+        });
+
+        // 360 VR Video Player Functions
+        function initVRVideoPlayer(videoFile) {
+            const container = document.getElementById('vr-video-container');
+            
+            // Check if it's a YouTube video
+            if (videoFile.includes('youtube.com') || videoFile.includes('youtu.be')) {
+                initYouTubeVR(videoFile);
+                return;
+            }
+            
+            // For local video files (if needed in future)
+            showVideoError('Video formatı desteklenmiyor. VR deneyimi için YouTube video kullanın.');
+        }
+
+        // YouTube VR Integration
+        function initYouTubeVR(videoUrl) {
+            const container = document.getElementById('vr-video-container');
+            const videoId = extractYouTubeId(videoUrl);
+            
+            console.log('360° VR Video başlatılıyor...');
+            console.log('Video ID:', videoId);
+            console.log('Original URL:', videoUrl);
+            
+            if (!videoId) {
+                showVideoError('Video yüklenemedi - Video ID bulunamadı');
+                return;
+            }
+            
+            container.innerHTML = `
+                <div class="vr-loading">
+                    <div class="spinner"></div>
+                    <p>360° VR Deneyimi Yükleniyor...</p>
+                    <p style="font-size: 0.9rem; opacity: 0.7;">İnternet bağlantısı kontrol ediliyor...</p>
+                </div>
+                <div id="vr-video-iframe">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&modestbranding=1&origin=${window.location.origin}" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
+                        allowfullscreen
+                        onload="onYouTubeIframeLoad()"
+                        onerror="onYouTubeIframeError()">
+                    </iframe>
+                </div>
+            `;
+            
+            console.log('YouTube iframe oluşturuldu');
+            
+            // Set timeout for loading
+            setTimeout(() => {
+                const loading = document.querySelector('.vr-loading');
+                if (loading) {
+                    loading.innerHTML = `
+                        <div class="spinner"></div>
+                        <p>Video yükleniyor...</p>
+                        <p style="font-size: 0.9rem; opacity: 0.7;">Biraz daha bekleyin...</p>
+                    `;
+                }
+            }, 3000);
+            
+            // Add event listeners
+            addVREventListeners();
+            
+            // Add ESC key listener for closing VR
+            document.addEventListener('keydown', handleVRKeyPress);
+        }
+
+        // YouTube iframe load success
+        function onYouTubeIframeLoad() {
+            console.log('YouTube iframe başarıyla yüklendi');
+            const loading = document.querySelector('.vr-loading');
+            if (loading) {
+                loading.remove();
+            }
+        }
+
+        // YouTube iframe load error
+        function onYouTubeIframeError() {
+            console.error('YouTube iframe yüklenirken hata oluştu');
+            showVideoError('YouTube video yüklenemedi. İnternet bağlantınızı kontrol edin.');
+        }
+
+        function extractYouTubeId(url) {
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+            const match = url.match(regExp);
+            return (match && match[2].length === 11) ? match[2] : null;
+        }
+
+        function initThreeJSScene() {
+            const container = document.getElementById('vr-video-container');
+            
+            try {
+                // Check if Three.js is loaded
+                if (typeof THREE === 'undefined') {
+                    throw new Error('Three.js kütüphanesi yüklenemedi');
+                }
+                
+                // Create scene
+                vrScene = new THREE.Scene();
+                
+                // Create camera
+                vrCamera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+                vrCamera.position.set(0, 0, 0.1);
+                
+                // Create renderer
+                vrRenderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+                vrRenderer.setSize(container.clientWidth, container.clientHeight);
+                vrRenderer.setClearColor(0x000000, 1);
+                container.appendChild(vrRenderer.domElement);
+                
+                // Check if OrbitControls is available
+                if (typeof THREE.OrbitControls === 'undefined') {
+                    throw new Error('OrbitControls yüklenemedi');
+                }
+                
+                // Create controls
+                vrControls = new THREE.OrbitControls(vrCamera, vrRenderer.domElement);
+                vrControls.enableZoom = true;
+                vrControls.enablePan = false;
+                vrControls.enableDamping = true;
+                vrControls.dampingFactor = 0.05;
+                vrControls.rotateSpeed = 0.5;
+                vrControls.maxDistance = 2;
+                vrControls.minDistance = 0.1;
+                
+                // Create multiple planes to simulate 360° effect
+                create360Effect();
+                
+                // Position camera inside the scene
+                vrCamera.position.set(0, 0, 0.1);
+                
+                // Handle window resize
+                window.addEventListener('resize', onWindowResize);
+                
+                console.log('360° effect scene başarıyla oluşturuldu');
+                
+            } catch (error) {
+                console.error('Three.js initialization error:', error);
+                showVideoError('Three.js kütüphanesi yüklenirken hata oluştu: ' + error.message);
+            }
+        }
+
+        function create360Effect() {
+            // Create video texture
+            videoTexture = new THREE.VideoTexture(videoElement);
+            videoTexture.minFilter = THREE.LinearFilter;
+            videoTexture.magFilter = THREE.LinearFilter;
+            videoTexture.format = THREE.RGBFormat;
+            
+            // Create material
+            videoMaterial = new THREE.MeshBasicMaterial({ map: videoTexture });
+            
+            // Create multiple planes to simulate 360° environment
+            const planeGeometry = new THREE.PlaneGeometry(2, 1.2);
+            
+            // Front wall
+            const frontWall = new THREE.Mesh(planeGeometry, videoMaterial);
+            frontWall.position.set(0, 0, -1);
+            vrScene.add(frontWall);
+            
+            // Back wall (same video, different position)
+            const backWall = new THREE.Mesh(planeGeometry, videoMaterial);
+            backWall.position.set(0, 0, 1);
+            backWall.rotation.y = Math.PI;
+            vrScene.add(backWall);
+            
+            // Left wall
+            const leftWall = new THREE.Mesh(planeGeometry, videoMaterial);
+            leftWall.position.set(-1, 0, 0);
+            leftWall.rotation.y = Math.PI / 2;
+            vrScene.add(leftWall);
+            
+            // Right wall
+            const rightWall = new THREE.Mesh(planeGeometry, videoMaterial);
+            rightWall.position.set(1, 0, 0);
+            rightWall.rotation.y = -Math.PI / 2;
+            vrScene.add(rightWall);
+            
+            // Ceiling
+            const ceiling = new THREE.Mesh(planeGeometry, videoMaterial);
+            ceiling.position.set(0, 0.6, 0);
+            ceiling.rotation.x = -Math.PI / 2;
+            vrScene.add(ceiling);
+            
+            // Floor
+            const floor = new THREE.Mesh(planeGeometry, videoMaterial);
+            floor.position.set(0, -0.6, 0);
+            floor.rotation.x = Math.PI / 2;
+            vrScene.add(floor);
+            
+            // Store references for cleanup
+            sphereMesh = [frontWall, backWall, leftWall, rightWall, ceiling, floor];
+        }
+
+        function addVREventListeners() {
+            // Video event listeners (if video element exists)
+            if (videoElement) {
+                videoElement.addEventListener('loadeddata', () => {
+                    console.log('Video yüklendi:', videoElement.videoWidth + 'x' + videoElement.videoHeight);
+                    
+                    // Remove loading state
+                    const loading = document.querySelector('.vr-loading');
+                    if (loading) {
+                        loading.remove();
+                    }
+                    
+                    // Auto-play video
+                    videoElement.play().then(() => {
+                        isPlaying = true;
+                        updatePlayPauseButton();
+                        console.log('Video oynatılıyor');
+                    }).catch(err => {
+                        console.log('Auto-play prevented:', err);
+                        // Manual play button will be available
+                    });
+                });
+                
+                videoElement.addEventListener('error', (e) => {
+                    console.error('Video loading error:', e);
+                    showVideoError('Video dosyası yüklenirken hata oluştu. ogretmenVR.mp4 dosyasının mevcut olduğundan emin olun.');
+                });
+                
+                videoElement.addEventListener('loadstart', () => {
+                    console.log('Video yüklenmeye başladı');
+                });
+                
+                videoElement.addEventListener('canplay', () => {
+                    console.log('Video oynatılmaya hazır');
+                });
+            }
+        }
+
+        // Handle VR key presses
+        function handleVRKeyPress(event) {
+            if (event.key === 'Escape') {
+                // If in fullscreen, exit fullscreen first
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                } else {
+                    // If not in fullscreen, hide VR experience
+                    hideVRExperience();
+                }
+            }
+        }
+
+        // Hide VR experience
+        function hideVRExperience() {
+            // Exit fullscreen if active
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+            
+            // Cleanup VR resources
+            cleanupVR();
+            
+            // Remove key listener
+            document.removeEventListener('keydown', handleVRKeyPress);
+            
+            // Navigate back to VR explore page
+            showPage('vr-explore');
+        }
+
+        // Close VR experience (kept for backward compatibility)
+        function closeVRExperience() {
+            hideVRExperience();
+        }
+
+        function togglePlayPause() {
+            try {
+                // For YouTube videos, we need to control the iframe
+                const iframe = document.querySelector('#vr-video-iframe iframe');
+                if (iframe && iframe.src) {
+                    // YouTube iframe API control
+                    const iframeSrc = iframe.src;
+                    if (isPlaying) {
+                        // Pause video by removing autoplay parameter
+                        iframe.src = iframeSrc.replace('autoplay=1', 'autoplay=0');
+                        isPlaying = false;
+                    } else {
+                        // Play video by adding autoplay parameter
+                        iframe.src = iframeSrc.replace('autoplay=0', 'autoplay=1');
+                        isPlaying = true;
+                    }
+                    updatePlayPauseButton();
+                } else if (videoElement && videoElement.play) {
+                    // For local video files
+                    if (isPlaying) {
+                        videoElement.pause();
+                        isPlaying = false;
+                    } else {
+                        videoElement.play().catch(err => {
+                            console.log('Video play error:', err);
+                        });
+                        isPlaying = true;
+                    }
+                    updatePlayPauseButton();
+                } else {
+                    // Fallback: just toggle the button state
+                    isPlaying = !isPlaying;
+                    updatePlayPauseButton();
+                    console.log('Video control not available, toggling button state only');
+                }
+            } catch (error) {
+                console.error('Toggle play/pause error:', error);
+                // Fallback: just toggle the button state
+                isPlaying = !isPlaying;
+                updatePlayPauseButton();
+            }
+        }
+
+        function updatePlayPauseButton() {
+            const btn = document.getElementById('play-pause-btn');
+            const icon = btn.querySelector('i');
+            
+            if (isPlaying) {
+                icon.className = 'fas fa-pause';
+                btn.innerHTML = '<i class="fas fa-pause"></i> Duraklat';
+            } else {
+                icon.className = 'fas fa-play';
+                btn.innerHTML = '<i class="fas fa-play"></i> Oynat';
+            }
+        }
+
+        function toggleFullscreen() {
+            const container = document.getElementById('vr-video-container');
+            const controls = document.querySelector('.vr-controls');
+            const instructions = document.querySelector('.vr-instructions');
+            
+            if (!document.fullscreenElement) {
+                container.requestFullscreen().then(() => {
+                    container.classList.add('fullscreen');
+                    
+                    // Hide controls and instructions in fullscreen
+                    if (controls) controls.style.display = 'none';
+                    if (instructions) instructions.style.display = 'none';
+                    
+                    onWindowResize();
+                }).catch(err => {
+                    console.log('Fullscreen error:', err);
+                });
+            } else {
+                document.exitFullscreen().then(() => {
+                    container.classList.remove('fullscreen');
+                    
+                    // Show controls and instructions when exiting fullscreen
+                    if (controls) controls.style.display = 'flex';
+                    if (instructions) instructions.style.display = 'block';
+                    
+                    onWindowResize();
+                });
+            }
+        }
+
+        function resetView() {
+            vrCamera.position.set(0, 0, 0.1);
+            vrCamera.rotation.set(0, 0, 0);
+            vrControls.reset();
+        }
+
+        function onWindowResize() {
+            const container = document.getElementById('vr-video-container');
+            if (!container) return;
+            
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            
+            // Only resize Three.js components if they exist
+            if (vrCamera && vrRenderer) {
+                vrCamera.aspect = width / height;
+                vrCamera.updateProjectionMatrix();
+                vrRenderer.setSize(width, height);
+            }
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            // Only update controls if they exist
+            if (vrControls) {
+                vrControls.update();
+            }
+            
+            // Only render if all components exist
+            if (vrRenderer && vrScene && vrCamera) {
+                vrRenderer.render(vrScene, vrCamera);
+            }
+        }
+
+        function showVideoError(message = 'Video yüklenirken hata oluştu') {
+            const container = document.getElementById('vr-video-container');
+            container.innerHTML = `
+                <div class="vr-loading">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: #ff6b6b; margin-bottom: 15px;"></i>
+                    <h4>VR Video Yüklenemedi</h4>
+                    <p>${message}</p>
+                    <div class="alert alert-warning mt-3" style="background: rgba(255, 193, 7, 0.2); border: 1px solid rgba(255, 193, 7, 0.5); color: var(--text-light);">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Olası Nedenler:</strong>
+                        <ul class="mt-2 mb-0" style="text-align: left;">
+                            <li>İnternet bağlantısı sorunu</li>
+                            <li>YouTube video erişim kısıtlaması</li>
+                            <li>Tarayıcı uyumluluk sorunu</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary me-2" onclick="location.reload()">
+                            <i class="fas fa-redo me-2"></i>Tekrar Dene
+                        </button>
+                        <button class="btn btn-outline-light" onclick="hideVRExperience()">
+                            <i class="fas fa-arrow-left me-2"></i>Geri Dön
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Cleanup VR resources when leaving page
+        function cleanupVR() {
+            // Cleanup YouTube iframe if exists
+            const iframe = document.querySelector('#vr-video-iframe iframe');
+            if (iframe) {
+                iframe.src = '';
+            }
+            
+            // Remove key listener
+            document.removeEventListener('keydown', handleVRKeyPress);
+            
+            // Stop video if playing
+            if (videoElement && !videoElement.paused) {
+                videoElement.pause();
+            }
+            
+            // Exit fullscreen if active
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+            
+            // Cleanup Three.js resources if they exist
+            if (vrRenderer) {
+                vrRenderer.dispose();
+                vrRenderer = null;
+            }
+            
+            if (vrScene) {
+                vrScene.clear();
+                vrScene = null;
+            }
+            
+            if (vrControls) {
+                vrControls.dispose();
+                vrControls = null;
+            }
+            
+            console.log('VR resources cleaned up');
+        }
+
+        // Update showPage function to cleanup VR when leaving
+        const originalShowPage = showPage;
+        showPage = function(pageId) {
+            // Cleanup VR if leaving VR simulation page
+            if (document.getElementById('vr-simulation-page').classList.contains('active')) {
+                cleanupVR();
+            }
+            
+            // Call original function
+            originalShowPage(pageId);
+        };
+    </script>
+</body>
+</html>
+

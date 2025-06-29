@@ -1,0 +1,852 @@
+[
+  {
+    "id": 1,
+    "question": "Bir yazı yazarken, bir ödev yaparken, yazım (imla) kurallarına dikkat eder misiniz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 2,
+    "question": "Bir hikaye kitabını hızlı ve doğru okuyabilir misiniz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 3,
+    "question": "Çarpım tablosunu, bölme işlemini kolay öğrenebildiniz mi?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 4,
+    "question": "Birbirine çok benzeyen iki resmin arasındaki küçük farkları hemen görebilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 5,
+    "question": "Kelimeleri doğru bir biçimde yazabiliyor ve söyleyebiliyor musunuz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 6,
+    "question": "Bir dairenin merkezini doğru bir biçimde tahmin ederek işaretleyebilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 7,
+    "question": "İki çizgi arasında çok az bir uzunluk farkı olduğunda, bunu kolaylıkla algılayabilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 8,
+    "question": "Bir parçayı bir kere okuduktan sonra hemen özetleyebiliyor musunuz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 9,
+    "question": "Dört işlemle akıldan, hızlı problem çözebilir misiniz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 10,
+    "question": "Bir doğru parçasının kaç santimetre olduğunu doğru tahmin edebilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 11,
+    "question": "Yeni duyduğunuz kelimelerin anlamlarını öğrenmeye çalışır mısınız?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 12,
+    "question": "Okuduğunuz bir parçada belirten fikirler arasında ilişki kurabiliyor musunuz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 13,
+    "question": "Bir matematik probleminin çözüm yolunu öğrendikten sonra, ona benzer problemleri çözebiliyor musunuz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 14,
+    "question": "İlk defa gittiğiniz binada yönünüzü bulabiliyor musunuz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 15,
+    "question": "Bir defa başkaları ile birlikte gittiğiniz bir yeri, ikinci defa yalnız başına gittiğinizde, kolaylıkla bulabilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 16,
+    "question": "Gelişigüzel parçaları ayrılmış bir şeklin veya cismin parçalarını eski yerlerine kolaylıkla yerleştirebilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 17,
+    "question": "Bir makinanın şemasına bakarak makineyi kurabilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 18,
+    "question": "Açılmış hali verilen geometrik bir cismin, kapandığı zaman açılacağı şekli göz önünde canlandırabilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 19,
+    "question": "Bir konuda edindiğiniz bilgileri, kendi sözcüklerinizle başkalarına aktarabiliyor musunuz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 20,
+    "question": "Sizin düzeyinizde bir matematik kitabını okuyarak bir problemin çözüm yolunu bulabiliyor musunuz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 21,
+    "question": "Boş zamanlarınızda, zevk için matematik problemleri çözmeye çalışır mısınız?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 22,
+    "question": "Bir konuyu söz ve yazı ile anlatırken, fikirleri doğru bir sıra ile verebiliyor musunuz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 23,
+    "question": "Matematik dersinde, özel bir yardım (ders) almadan başarılı olabiliyor musunuz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 24,
+    "question": "Bir yazıdaki fikir ve ifade hatalarını kolaylıkla görebilir misiniz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 25,
+    "question": "Boş bir kesme şeker kutusu, kısa kenarlarından kesilip açılınca hangi yüzeyin nereye geleceğini gözönünde canlandırabilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 26,
+    "question": "Öğrendiğiniz matematik kurallarını fen bilgisi derslerindeki problemlere uygulayabiliyor musunuz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 27,
+    "question": "Bir kağıda, cetvel kullanmadan düzgün paralel çizgiler çizebiliyor musunuz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 28,
+    "question": "Karmaşık bir geometrik şeklin, sağa ve sola döndürülmesi ile alacağı durumu gözönünde canlandırabilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 29,
+    "question": "Bir problemin, size öğretilen çözüm yollarından farklı çözüm yollarını bulabilir misiniz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 30,
+    "question": "Akıcı bir üslupla güzel yazı (örneğin bir mektup) yazabilir misiniz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 31,
+    "question": "Okuduğunuz bir parçada anlatılan fikirleri bulup özetleyebiliyor musunuz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 32,
+    "question": "Sizin düzeyinde, ama daha önce hiç görmediğiniz bir matematik kitabını rahatlıkla okuyabilir misiniz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 33,
+    "question": "Bir evin planına baktığınızda, evin yapılmış halini gözönünde canlandırabilir misiniz?",
+    "category": "Şekil-Uzay Yeteneği"
+  },
+  {
+    "id": 34,
+    "question": "Bir kağıda çizilen yıldız biçimindeki bir şekli makasla, düzgün bir biçimde kesip çıkarabilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 35,
+    "question": "Alet kullanmadan düzgün geometrik şekiller çizebilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 36,
+    "question": "Attığınız bir bilyeyi veya bir taşı istediğiniz hedefe gönderebilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 37,
+    "question": "Satranç öğrenmek için çaba sarfediyor musunuz?",
+    "category": "Sayısal Yetenek"
+  },
+  {
+    "id": 38,
+    "question": "Fen dersleri ile ilgili konuları kolay öğrenebiliyor musunuz?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 39,
+    "question": "Desenli kağıtları, şekilleri birbirine tamamlayacak şekilde, yanyana yapıştırabilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 40,
+    "question": "Bir aletin (örneğin, saatin) çok küçük bir parçasını (vidasını) yerine kolayca yerleştirebilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 41,
+    "question": "Gelecekte kendinizi, laboratuarda araştırmacı olarak düşlediğiniz oldu mu?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 42,
+    "question": "Bir kente gittiğinizde, müzeleri, tarihi yerleri gezer misiniz? (gezmek ister misiniz)",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 43,
+    "question": "Çeşitli atasözlerinin ve özdeyişlerin nereden çıktığını araştırmak ister misiniz?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 44,
+    "question": "İnsanların ne düşündüklerini ve ne hissettiklerini incelemekten hoşlanır mısınız?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 45,
+    "question": "Fen derslerinde öğrendiğiniz ilke ve kuralları evinizdeki sorunların çözümünde kullanır mısınız?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 46,
+    "question": "Fen dersleri ile ilgili konularda sınıfta öğretilenlerden daha fazla bilgi edinmek için başka kaynaklara başvurduğunuz oluyor mu?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 47,
+    "question": "Evcil hayvanların veya bitkilerin gelişmelerini incelemekten hoşlanır mısınız?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 48,
+    "question": "Yeni öğrendiğiniz yabancı dildeki sözcükleri bir cümlede kullanmaya çalışır mısınız?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 49,
+    "question": "Fen bilgisi ile ilgili problemleri çözmekten hoşlanır mısınız?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 50,
+    "question": "Deniz dibindeki hayatı gösteren bir filmi ilgi ve dikkatle izler misiniz?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 51,
+    "question": "Yabancı dildeki kelimeleri kolaylıkla ezberleyebiliyor musunuz?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 52,
+    "question": "Bir bilyeyi, başka bir bilye ile vurarak, istediğiniz hedefe gönderebilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 53,
+    "question": "Büyük coğrafya keşiflerini anlatan bir televizyon dizisini izlemekten hoşlanır mısınız?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 54,
+    "question": "Tarih ve coğrafya derslerinde okutulan konuları kolay öğrenebiliyor musunuz?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 55,
+    "question": "Bilimsel proje sergilerini gezer misiniz? (Gezmek ister misiniz)",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 56,
+    "question": "İnsanların gazetelerde hangi haberleri merakla okuduklarını araştırmak ister misiniz?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 57,
+    "question": "Tarih romanları okumaktan hoşlanır mısınız?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 58,
+    "question": "Televizyonda bilimsel buluşları anlatan belgesel programları izler misiniz?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 59,
+    "question": "Ünlü bilim adamlarının hayatını anlatan televizyon dizilerini izler misiniz?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 60,
+    "question": "Bir pastayı veya böreği, eşit olarak ve düzgün biçimde kesebilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 61,
+    "question": "\"Çocuklarda yaratıcılık\" başlıklı bir makaleyi okumak ister misiniz?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 62,
+    "question": "Çevrenizdeki insanların davranışlarının nedenlerini merak edip araştırır mısınız?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 63,
+    "question": "Uzay araçlarının, roketlerin evrimini gösteren bir sergiyi izlemek ister misiniz?",
+    "category": "Fen Bilimleri İlgisi"
+  },
+  {
+    "id": 64,
+    "question": "Ünlü toplum liderlerinin hayatını anlatan eserleri okumak veya filmleri izlemek ister misiniz?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 65,
+    "question": "\"İnsan hakları\" konulu bir ödev hazırlayıp sınıfta sunmak ister misiniz?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 66,
+    "question": "Küçük bir deliğe, ince bir çubuğu, deliğin kenarına değdirmeden sokabilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 67,
+    "question": "Küçük bir şeklin (örneğin bir çiçek resminin) içini, dışarı taşırmadan sulu boya ile boyayabilir misiniz?",
+    "category": "Göz-El Koordinasyonu"
+  },
+  {
+    "id": 68,
+    "question": "Orta Asya'daki eski uygarlık eserlerini gösteren bir belgesel filmi izlemekten hoşlanır mısınız?",
+    "category": "Sosyal Bilimler İlgisi"
+  },
+  {
+    "id": 69,
+    "question": "Evinizde ipekböceği yetiştirip bakımını üstlenebilir misiniz?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 70,
+    "question": "Kapı zili, kilit gibi ev aletlerini onarmaya çalışır mısınız?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 71,
+    "question": "Tahtadan veya metalden oyuncaklar yapabilir misiniz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 72,
+    "question": "Yeni çiçek türleri yetiştirmeyi denemek ister misiniz?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 73,
+    "question": "Bir yabancı turistle, bildiğiniz yabancı dille konuşmaya çalışır mısınız?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 74,
+    "question": "Gelecekte yabancı dilinizi ilerletip o dilde yazılmış dergi ve kitapları okumayı düşünür müsünüz?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 75,
+    "question": "\"Hayvanat bahçesine getirilen hayvanların yeni çevreye uyum sorunları\" konulu bir belgesel filmi ilgi ile izler misiniz?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 76,
+    "question": "Bir çiftliğin yöneticisi olmayı düşünür müsünüz?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 77,
+    "question": "Yeni öğrendiğiniz yabancı dildeki sözcükleri doğru biçimde söylemeye gayret eder misiniz?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 78,
+    "question": "Kaliteli meyve yetiştiren bir üretici olmayı düşünür müsünüz?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 79,
+    "question": "Bir aleti parçalara ayırıp tekrar birleştirebilir misiniz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 80,
+    "question": "Evcil hayvanların hangi koşullarda ve ortamda daha iyi geliştiklerini incelemekten hoşlanır mısınız?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 81,
+    "question": "Yeni bir alet veya makine ile karşılaştığınızda, hemen onun nasıl çalıştığını öğrenmeye çalışır mısınız?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 82,
+    "question": "Evde bir hayvan (kuş) besler, bakımını yapar mısınız?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 83,
+    "question": "Saksıda ve bahçede çiçek yetiştirip bakımını üstlenir misiniz?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 84,
+    "question": "Elektrikli aletlerin nasıl işlediklerini inceler misiniz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 85,
+    "question": "Havuzlarda balık üretme yöntemlerini gösteren bir filmi ilgi ile izler misiniz?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 86,
+    "question": "Her türlü araç ve gereç sağlansa, bir kafes yapmayı dener misiniz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 87,
+    "question": "İnanç ve düşüncelerinizi başkalarına kolaylıkla aktarabilir misiniz?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 88,
+    "question": "Tartışmalarda güçlü kanıtlar bularak, görüşünüzü karşınızdakilere kabul ettirebilir misiniz?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 89,
+    "question": "Belleğiniz kuvvetli midir?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 90,
+    "question": "İnsanların daha çok hangi malları almak istediklerini öğrenmeye çalışır mısınız?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 91,
+    "question": "Model uçak yapmaya çalışır mısınız?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 92,
+    "question": "Arkadaşlarınız arasındaki çatışmaların çözümünde arabuluculuk yapar mısınız?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 93,
+    "question": "Bir yazıdaki hataları düzeltmekten, bir hesabı kontrol etmekten hoşlanır mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 94,
+    "question": "Yaptığınız herhangi bir işin temiz ve özenli olması için gereken özeni gösterir misiniz?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 95,
+    "question": "Bir makinanın, örneğin bir elektrik motorunun, evrimini gösteren bir sergiyi gezmek ister misiniz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 96,
+    "question": "Çevrenizde \"Hazırcevap\" bir kişi olarak tanınır mısınız?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 97,
+    "question": "Okul kantini ya da kooperatifini yönetmek ister misiniz?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 98,
+    "question": "Bir işin ince ayrıntıları ile uğraşır mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 99,
+    "question": "Paranızı nerelerde harcadığınızın kaydını tutar mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 100,
+    "question": "Anılarınızı yazar mısınız?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 101,
+    "question": "Yaz aylarında bir dükkanda ya da ticarethanede çalışmak ister misiniz?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 102,
+    "question": "Derslerinize günü gününe çalışır mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 103,
+    "question": "Okulda şiir okuma yarışmaları düzenleyen bir grubun üyesi olmak ister misiniz?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 104,
+    "question": "Mektuplarınızı eski okul karnelerinizi tarih sırasına koyup saklar mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 105,
+    "question": "Aldığınız her şeyin ya da yaptığınız her işin düzenli bir biçimde kaydını tutar mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 106,
+    "question": "Yabancı dil kurslarına gitmek ister misiniz?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 107,
+    "question": "Bir makinanın çalışmasını geliştirici yöntemler düşünür müsünüz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 108,
+    "question": "Söz ve davranışlarınızın başkaları üzerindeki etkilerini öğrenmeye çalışır mısınız?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 109,
+    "question": "Konuşurken çevrenizdeki insanların ilgisini çekebilir ve görüşlerinizi onlara kabul ettirebilir misiniz?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 110,
+    "question": "Televizyondaki reklamların daha iyi nasıl yapılabileceği üzerinde araştırma yapan bir grubun içinde yer almak ister misiniz?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 111,
+    "question": "Evleri dolaşıp bir malın tanıtımını yapmaktan hoşlanır mısınız?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 112,
+    "question": "Ödevlerinizi zamanında ve düzgün biçimde yapar mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 113,
+    "question": "Televizyonda veya radyoda şiir saatlerini izler misiniz?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 114,
+    "question": "Kendini gelecekte bir yazar olarak düşlediğiniz olur mu?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 115,
+    "question": "Yaptığınız her hangi bir şeyi özenle süsler misiniz?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 116,
+    "question": "Küçük hikayeler yazmaya çalışır mısınız?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 117,
+    "question": "Ünlü sanatçıların, ressamların hayatını merak eder misiniz?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 118,
+    "question": "Çevrenizdeki çeşitli makinaların bakımını yapar, onları bozmadan kullanabilir misiniz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 119,
+    "question": "Sizin gibi düşünmeyen insanları ikna etmek için uzun tartışmalara girer misiniz?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 120,
+    "question": "Çevrenizdeki eşyaların, ürünlerin, satılsalar kaç lira edeceklerini düşünür müsünüz?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 121,
+    "question": "Eşyalarınızı yerli yerine koyar, çevrenizi düzenli tutar mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 122,
+    "question": "Bir malı satmak için neler yapmak gerektiğini öğreten bir kursa katılmak ister misiniz?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 123,
+    "question": "Gazete, boş şişe gibi kullanılmış şeyleri satarak para kazanmayı düşünür müsünüz?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 124,
+    "question": "Yabancı dilde şarkı söylemeye özenir misiniz?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 125,
+    "question": "Mektupları zamanında cevaplandırır mısınız?",
+    "category": "İş Ayrıntıları İlgisi"
+  },
+  {
+    "id": 126,
+    "question": "Bir şeyi satın alacağınız zaman çeşitli dükkanları dolaşıp fiyatları karşılaştırarak gereğini duyar mısınız?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 127,
+    "question": "Bir aleti, tarifesine ve şemasına bakarak çalıştırabilir misiniz?",
+    "category": "Mekanik İlgi"
+  },
+  {
+    "id": 128,
+    "question": "Güzel konuşma ve başkalarını ikna edebilme gücünü geliştirici kurslara katılmak ister misiniz?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 129,
+    "question": "Arkadaşlarınıza ciklet, çikolata, bilye vb. şeyler sattınız mı?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 130,
+    "question": "Gelecekte kendinizi bir tüccar olarak düşlediğiniz olur mu?",
+    "category": "Ticaret İlgisi"
+  },
+  {
+    "id": 131,
+    "question": "Roman, hikaye veya şiir okur musunuz?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 132,
+    "question": "Boş vakitlerinizi çiçek, nakış, resim, heykel vb. yaparak geçirmeye çalışır mısınız?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 133,
+    "question": "Radyo ve televizyonda müzik programlarını izler misiniz?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 134,
+    "question": "Müzik yarışmalarına katılmak ister misiniz?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 135,
+    "question": "Televizyonda resim sanatı ile ilgili haberleri ilgi ile izler misiniz?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 136,
+    "question": "Gittiğiniz bir kentte sanat galerilerini, resim sergilerini gezmek ister misiniz?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 137,
+    "question": "Ağlayan bir çocuğu oyalayabilir misiniz?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 138,
+    "question": "Yaşlılar yurdunda eğlence günleri düzenlemekten hoşlanır mısınız?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 139,
+    "question": "Başkalarına kişisel sorunların çözümünde yardımcı olabiliyor musunuz?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 140,
+    "question": "Çocuk gürültüsüne katlanabilir misiniz?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 141,
+    "question": "Belli bir anda pek çok şeye birden dikkat edebilir misiniz?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 142,
+    "question": "Kompozisyon derslerinde başarılı mısınız?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 143,
+    "question": "Okul gazetesine yazı yazar mısınız? (Yazmak ister misiniz?)",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 144,
+    "question": "Müzik dersleri alıyor musunuz veya almak ister misiniz?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 145,
+    "question": "Bir müzik aleti çalar mısınız?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 146,
+    "question": "Bir hastaya bakabilir, ilaçlarını zamanında verebilir misiniz?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 147,
+    "question": "Resim ve mimarlık sanatının gelişimini anlatan bir kitabı zevkle okur musunuz?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 148,
+    "question": "Bir hastanede, yaz aylarında gönüllü olarak çalışmak ister misiniz?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 149,
+    "question": "Boş vakitlerinizi resim veya el işleri yaparak geçirmeye çalışır mısınız?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 150,
+    "question": "Konuştuğunuz zaman kendinizi çevrenizdeki insanlara dinletebiliyor musunuz?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 151,
+    "question": "Karşınızdaki insanların ne düşündükleri ve ne hissettiklerini anlayabilir misiniz?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 152,
+    "question": "Müzik aletleri sergisini gezmek ister misiniz?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 153,
+    "question": "Çeşitli ülkelerin halk şarkılarını tanıtan bir program izler misiniz?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 154,
+    "question": "Hastalar ve yaşlılara kitap okumaktan hoşlanır mısınız?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 155,
+    "question": "Küçük çocuklara oyun öğretmekten, onlara şarkı söylemekten hoşlanır mısınız?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 156,
+    "question": "İmkanlarınız ölçüsünde konserlere gitmeye çalışır mısınız?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 157,
+    "question": "Yabancı dil dersinde başarılı mısınız?",
+    "category": "Yabancı Dil İlgisi"
+  },
+  {
+    "id": 158,
+    "question": "Ayakta ve hareketli olarak çalışmaktan hoşlanır mısınız?",
+    "category": "Sosyal Yardım İlgisi"
+  },
+  {
+    "id": 159,
+    "question": "Ufak tefek besteler yapmaya çalışır mısınız?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 160,
+    "question": "Bir evi ya da salonu süslemekten hoşlanır mısınız?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 161,
+    "question": "Başkalarına dinletecek düzeyde bir müzik aleti çalıyor musunuz?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 162,
+    "question": "Odanızı, yaptığınız resim veya el işleri ile süsler misiniz?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 163,
+    "question": "El sanatları ya da resim kurslarına gitmek ister misiniz?",
+    "category": "Güzel Sanatlar İlgisi"
+  },
+  {
+    "id": 164,
+    "question": "Yeni duyduğunuz bir müzik parçasını çalmaya veya söylemeye çalışır mısınız?",
+    "category": "Müzik İlgisi"
+  },
+  {
+    "id": 165,
+    "question": "Gazete ve dergilerdeki edebiyat sütunlarını okur musunuz?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 166,
+    "question": "Okul kitaplığına gider ve kitap alır mısınız?",
+    "category": "Edebiyat İlgisi"
+  },
+  {
+    "id": 167,
+    "question": "Dilbilgisi kurallarını öğrenip uygulayabiliyor musunuz?",
+    "category": "Sözel Yetenek"
+  },
+  {
+    "id": 168,
+    "question": "Görüşlerinize karşı çıkıldığında bunu soğukkanlılıkla karşılar mısınız?",
+    "category": "İkna İlgisi"
+  },
+  {
+    "id": 169,
+    "question": "Açık havada çalışmaktan hoşlanır mısınız?",
+    "category": "Ziraat İlgisi"
+  },
+  {
+    "id": 170,
+    "question": "Gelecekte kendinizi çeşitli dillerin yapı ve özellikleri üzerinde çalışan bir araştırmacı olarak düşünebilir misiniz?",
+    "category": "Yabancı Dil İlgisi"
+  }
+]
